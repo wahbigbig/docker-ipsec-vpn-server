@@ -39,6 +39,20 @@ Alternatively, you may [build from source code](https://github.com/hwdsl2/docker
 
 ## How to use this image
 
+### docker-compose.yml
+
+create `.env` file in the same folder as `docker-compose.yml`
+
+```shell
+VPN_IPSEC_PSK=dllm
+
+VPN_USER=username
+
+VPN_PASSWORD=o99
+```
+
+and run `docker-compose -d`
+
 ### Environment variables
 
 This Docker image uses the following three variables, that can be declared in an `env` file ([example](https://github.com/hwdsl2/docker-ipsec-vpn-server/blob/master/vpn.env.example)):
